@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Light</string>
+    <string name="welcome">Bem-vindo</string>
+    <string name="welcome_msg">Bem-vindo ao aplicativo Light, com ele você pode controlar luzes e outros dispositivos pelo seu celular! Preencha as informações abaixo para continuar.</string>
+    <string name="device_code_label">Código do dispositivo</string>
+    <string name="device_code_placeholder">Código do dispositivo</string>
+    <string name="device_ip_label">IP do dispositivo</string>
+    <string name="device_ip_placeholder">IP do dispositivo</string>
+    <string name="button_continue">CONTINUAR</string>
+    <string name="update">atualizar</string>
+    <string name="save">salvar</string>
+    <string name="back">voltar</string>
+    <string name="settings">Configurações</string>
+</resources>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".WizardActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/settingsText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:text="@string/settings"
+            android:textColor="#71ADB5"
+            android:textSize="36sp"
+            android:inputType="textCapWords"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/deviceCodeText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/roboto"
+            android:text="@string/device_code_label"
+            android:textAlignment="viewStart"
+            android:textColor="@color/colorAccent"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/settingsText" />
+
+        <EditText
+            android:id="@+id/deviceCodeEditText"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/rounded_input"
+            android:ems="10"
+            android:hint="@string/device_code_placeholder"
+            android:inputType="textPersonName"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:textColor="@color/colorTextInput"
+            android:textColorHint="@color/colorHint"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/deviceCodeText" />
+
+        <TextView
+            android:id="@+id/ipTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/roboto"
+            android:text="@string/device_ip_label"
+            android:textAlignment="viewStart"
+            android:textColor="@color/colorAccent"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/deviceCodeEditText" />
+
+        <EditText
+            android:id="@+id/ipEditText"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/rounded_input"
+            android:ems="10"
+            android:hint="@string/device_ip_placeholder"
+            android:inputType="number"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:textColor="@color/colorTextInput"
+            android:textColorHint="@color/colorHint"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ipTextView" />
+
+        <Button
+            android:id="@+id/saveButton"
+            style="?attr/selectableItemBackground"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/button_rounded_accent"
+            android:fontFamily="@font/roboto"
+            android:text="@string/save"
+            android:textColor="#FFF"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ipEditText" />
+
+        <Button
+            android:id="@+id/backButton"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/button_rounded_accent"
+            android:backgroundTint="@color/colorSecondary"
+            android:fontFamily="@font/roboto"
+            android:text="@string/back"
+            android:textColor="#FFF"
+            android:textSize="18sp"
+            style="?attr/selectableItemBackground"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/saveButton" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

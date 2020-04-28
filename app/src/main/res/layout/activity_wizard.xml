@@ -59,7 +59,7 @@
             app:layout_constraintTop_toBottomOf="@+id/welcomeMsg" />
 
         <EditText
-            android:id="@+id/deviceCodeEditText"
+            android:id="@+id/deviceCodeEditText_wizard"
             android:layout_width="0dp"
             android:layout_height="40dp"
             android:layout_marginStart="20dp"
@@ -78,7 +78,7 @@
             app:layout_constraintTop_toBottomOf="@+id/deviceCodeText" />
 
         <TextView
-            android:id="@+id/ipTextView"
+            android:id="@+id/ipTextView_wizard"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="40dp"
@@ -90,10 +90,10 @@
             android:textSize="18sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/deviceCodeEditText" />
+            app:layout_constraintTop_toBottomOf="@+id/deviceCodeEditText_wizard" />
 
         <EditText
-            android:id="@+id/ipEditText"
+            android:id="@+id/ipEditText_wizard"
             android:layout_width="0dp"
             android:layout_height="40dp"
             android:layout_marginStart="20dp"
@@ -102,14 +102,14 @@
             android:background="@drawable/rounded_input"
             android:ems="10"
             android:hint="@string/device_ip_placeholder"
-            android:inputType="number"
+            android:inputType="textNoSuggestions"
             android:paddingStart="20dp"
             android:paddingEnd="20dp"
             android:textColor="@color/colorTextInput"
             android:textColorHint="@color/colorHint"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/ipTextView" />
+            app:layout_constraintTop_toBottomOf="@+id/ipTextView_wizard" />
 
         <Button
             android:id="@+id/continueButton"
@@ -127,7 +127,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/ipEditText" />
+            app:layout_constraintTop_toBottomOf="@+id/ipEditText_wizard" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

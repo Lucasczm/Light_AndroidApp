@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 
+import br.com.maplus.light.Utils.Configuration;
+
 public class SplashScreenActivity extends AppCompatActivity {
 
     @Override
@@ -20,7 +22,13 @@ public class SplashScreenActivity extends AppCompatActivity {
         }, 2000);
     }
     private void StartApp() {
-        Intent intent = new Intent(SplashScreenActivity.this, MainActivity.class);
+        Configuration configuration = Configuration.getInstance(this);
+        Intent intent;
+        if(configuration == null) {
+            intent = new Intent(SplashScreenActivity.this, WizardActivity.class);
+        } else{
+            intent = new Intent(SplashScreenActivity.this, MainActivity.class);
+        }
         startActivity(intent);
         finish();
     }

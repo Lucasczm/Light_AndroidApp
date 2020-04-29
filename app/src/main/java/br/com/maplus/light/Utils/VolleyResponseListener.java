@@ -1,7 +1,9 @@
 package br.com.maplus.light.Utils;
 
-public interface VolleyResponseListener {
+import org.json.JSONException;
+
+public interface VolleyResponseListener<T> {
     void onError(String message);
 
-    void onResponse(Object response);
+    void onResponse(T response);
 }

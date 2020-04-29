@@ -29,6 +29,7 @@ This project is an android application to setup and control IOT devices over int
   - [x] Setup wizard
   - [x] Load configurations on start
   - [x] Send request on light button press
-  - [ ] Setup refresh button to update light button state
+  - [x] Setup refresh button to update light button state
   - [x] Select internet or intranet on switch button (Over internet)
   - [x] Setup settings menu
+  - [ ] Refactor code

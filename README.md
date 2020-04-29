@@ -16,6 +16,8 @@ Android application to control IOT devices.
 
 This project is an android application to setup and control IOT devices over internet and intranet.
 
+![Android CI](https://github.com/Lucasczm/Light_AndroidApp/workflows/Android%20CI/badge.svg)
+
 ## TODO
 
 - Screens

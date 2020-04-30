@@ -10,6 +10,8 @@ Android application to control IOT devices.
 <p align="center">
   <a href="#about-this-project">About this project</a>&nbsp;&nbsp;&nbsp;&#149;&nbsp;&nbsp;&nbsp;
   <a href="#todo">TODO</a>
+  &nbsp;&nbsp;&nbsp;&#149;&nbsp;&nbsp;&nbsp;
+  <a href="#next-features">Next Features</a>
 </p>
 
 ## About this project
@@ -26,6 +28,7 @@ This project is an android application to setup and control IOT devices over int
   - [x] Settings menu
 
 - Functions
+
   - [x] Setup wizard
   - [x] Load configurations on start
   - [x] Send request on light button press
@@ -33,3 +36,9 @@ This project is an android application to setup and control IOT devices over int
   - [x] Select internet or intranet on switch button (Over internet)
   - [x] Setup settings menu
   - [ ] Refactor code
+
+## Next Features
+
+- Scan device over wifi
+- Setup device with app
+- Validate token key and IP

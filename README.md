@@ -38,7 +38,8 @@ This project is an android application to setup and control IOT devices over int
   - [x] Select internet or intranet on switch button (Over internet)
   - [x] Setup settings menu
   - [ ] Refactor code
-
+  - [ ] Setup wifi
+  
 ## Next Features
 
 - Scan device over wifi

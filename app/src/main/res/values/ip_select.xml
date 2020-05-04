@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="ip_select">
+        <item>IP Automático</item>
+        <item>IP Fixo</item>
+    </string-array>
+</resources>

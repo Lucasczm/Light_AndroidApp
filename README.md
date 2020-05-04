@@ -39,7 +39,7 @@ This project is an android application to setup and control IOT devices over int
   - [x] Setup settings menu
   - [ ] Refactor code
   - [ ] Setup wifi
-  
+
 ## Next Features
 
 - Scan device over wifi

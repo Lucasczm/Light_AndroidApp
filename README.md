@@ -37,11 +37,7 @@ This project is an android application to setup and control IOT devices over int
   - [x] Setup refresh button to update light button state
   - [x] Select internet or intranet on switch button (Over internet)
   - [x] Setup settings menu
+  - [x] Setup wifi
+  - [x] Esp touch protocol
+  - [ ] Save DHCP and IP
   - [ ] Refactor code
-  - [ ] Setup wifi
-
-## Next Features
-
-- Scan device over wifi
-- Setup device with app
-- Validate token key and IP

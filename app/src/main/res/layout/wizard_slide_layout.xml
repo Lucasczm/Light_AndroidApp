@@ -1,227 +1,256 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?><!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:orientation="vertical">-->
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:layout_height="match_parent">
 
     <RelativeLayout
-        android:id="@+id/header_wizard_layout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-
-        <ProgressBar
-            android:id="@+id/progressBar"
-            style="?android:attr/progressBarStyleLarge"
-            android:layout_width="200dp"
-            android:layout_height="200dp"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="15dp"
-            android:indeterminateDrawable="@drawable/progress_bar_thin" />
-
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="100dp"
-            android:layout_height="92.47dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginTop="68dp"
-            app:srcCompat="@drawable/wifi_logo" />
-
-        <TextView
-            android:id="@+id/wifiName"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/imageView"
-            android:layout_marginTop="43.53dp"
-            android:fontFamily="@font/roboto"
-            android:text="Rede Lucas"
-            android:textAlignment="center"
-            android:textColor="#71ADB5"
-            android:textSize="36sp" />
-
-        <TextView
-            android:id="@+id/wizard_slide_title"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/wifiName"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginEnd="20dp"
-            android:fontFamily="@font/roboto"
-            android:text="Para continuar vamos conectar na sua rede WiFi!"
-            android:textAlignment="viewStart"
-            android:textColor="@color/colorText"
-            android:textSize="18sp"
-            app:layout_constraintTop_toBottomOf="@+id/welcomeText" />
-
-        <TextView
-            android:id="@+id/wizard_slide_subtitle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/wizard_slide_title"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginEnd="20dp"
-            android:fontFamily="@font/roboto"
-            android:text="O Dispositivo só funciona com redes WiFi 2.4ghz"
-            android:textAlignment="center"
-            android:textColor="@color/colorText"
-            android:textSize="14sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/welcomeMsg" />
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:id="@+id/wifi_wizard_layout"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/header_wizard_layout"
-        android:layout_marginTop="30dp">
+        android:paddingBottom="25dp">
 
-        <TextView
-            android:id="@+id/wifiPassword"
+        <RelativeLayout
+            android:id="@+id/header_wizard_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:indeterminateDrawable="@drawable/progress_bar_thin" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="100dp"
+                android:layout_height="92.47dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="68dp"
+                app:srcCompat="@drawable/wifi_logo" />
+
+            <TextView
+                android:id="@+id/wifiName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView"
+                android:layout_marginTop="43.53dp"
+                android:fontFamily="@font/roboto"
+                android:text="Rede Lucas"
+                android:textAlignment="center"
+                android:textColor="#71ADB5"
+                android:textSize="36sp" />
+
+            <TextView
+                android:id="@+id/wizard_slide_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/wifiName"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/roboto"
+                android:text="Para continuar vamos conectar na sua rede WiFi!"
+                android:textAlignment="viewStart"
+                android:textColor="@color/colorText"
+                android:textSize="18sp"
+                app:layout_constraintTop_toBottomOf="@+id/welcomeText" />
+
+            <TextView
+                android:id="@+id/wizard_slide_subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/wizard_slide_title"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/roboto"
+                android:text="O Dispositivo só funciona com redes WiFi 2.4ghz"
+                android:textAlignment="center"
+                android:textColor="@color/colorText"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/welcomeMsg" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/wifi_wizard_layout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginStart="40dp"
-            android:layout_marginEnd="20dp"
-            android:fontFamily="@font/roboto"
-            android:text="Senha do WiFi:"
-            android:textAlignment="viewStart"
-            android:textColor="@color/colorAccent"
-            android:textSize="18sp" />
+            android:layout_below="@+id/header_wizard_layout"
+            android:layout_marginTop="30dp">
 
-        <EditText
-            android:id="@+id/wifiPassword_input"
-            android:layout_width="wrap_content"
-            android:layout_height="40dp"
-            android:layout_below="@+id/wifiPassword"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginEnd="20dp"
-            android:background="@drawable/rounded_input"
-            android:ems="10"
-            android:hint="Senha do Wifi"
-            android:inputType="textPassword"
-            android:paddingStart="20dp"
-            android:paddingEnd="20dp"
-            android:textColor="@color/colorTextInput"
-            android:textColorHint="@color/colorHint" />
+            <TextView
+                android:id="@+id/wifiPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/roboto"
+                android:text="Senha do WiFi:"
+                android:textAlignment="viewStart"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp" />
 
-        <TextView
-            android:id="@+id/deviceCodeText"
+            <EditText
+                android:id="@+id/wifiPassword_input"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_below="@+id/wifiPassword"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/rounded_input"
+                android:ems="10"
+                android:hint="Senha do Wifi"
+                android:inputType="textPassword"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:textColor="@color/colorTextInput"
+                android:textColorHint="@color/colorHint" />
+
+            <TextView
+                android:id="@+id/deviceCodeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/wifiPassword_input"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/roboto"
+                android:text="Código do dispositivo"
+                android:textAlignment="viewStart"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/deviceCodeEditText_wizard"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_below="@+id/deviceCodeText"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/rounded_input"
+                android:ems="10"
+                android:hint="@string/device_code_placeholder"
+                android:inputType="textPersonName"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:textColor="@color/colorTextInput"
+                android:textColorHint="@color/colorHint" />
+
+            <Button
+                android:id="@+id/continueButton"
+                style="?attr/selectableItemBackground"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_below="@id/deviceCodeEditText_wizard"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/button_rounded_accent"
+                android:fontFamily="@font/roboto"
+                android:text="@string/button_continue"
+                android:textColor="#FFF"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ip_wizard_layout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/wifiPassword_input"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginStart="40dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="20dp"
-            android:fontFamily="@font/roboto"
-            android:text="Código do dispositivo"
-            android:textAlignment="viewStart"
-            android:textColor="@color/colorAccent"
-            android:textSize="18sp" />
+            android:layout_below="@+id/header_wizard_layout"
+            android:layout_marginTop="30dp"
+            android:visibility="invisible">
 
-        <EditText
-            android:id="@+id/deviceCodeEditText_wizard"
-            android:layout_width="wrap_content"
-            android:layout_height="40dp"
-            android:layout_below="@+id/deviceCodeText"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginEnd="20dp"
-            android:background="@drawable/rounded_input"
-            android:ems="10"
-            android:hint="@string/device_code_placeholder"
-            android:inputType="textPersonName"
-            android:paddingStart="20dp"
-            android:paddingEnd="20dp"
-            android:textColor="@color/colorTextInput"
-            android:textColorHint="@color/colorHint" />
+            <Spinner
+                android:id="@+id/ip_select"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp" />
+
+            <TextView
+                android:id="@+id/ip_wizardText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ip_select"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/roboto"
+                android:text="@string/device_ip_label"
+                android:textAlignment="viewStart"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/ip_wizardEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_below="@+id/ip_wizardText"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/rounded_input"
+                android:ems="10"
+                android:hint="@string/device_ip_placeholder"
+                android:inputType="textPersonName"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:textColor="@color/colorTextInput"
+                android:textColorHint="@color/colorHint" />
+
+            <Button
+                android:id="@+id/ipConfirmButton"
+                style="?attr/selectableItemBackground"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_below="@id/ip_wizardEditText"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/button_rounded_accent"
+                android:fontFamily="@font/roboto"
+                android:text="@string/confirm"
+                android:textColor="#FFF"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
     </RelativeLayout>
-
-    <RelativeLayout
-        android:id="@+id/ip_wizard_layout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/header_wizard_layout"
-        android:layout_marginTop="30dp"
-        android:visibility="invisible">
-
-        <Spinner
-            android:id="@+id/ip_select"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_marginStart="20dp"
-            android:layout_marginEnd="20dp" />
-
-        <TextView
-            android:id="@+id/ip_wizardText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/ip_select"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginStart="40dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="20dp"
-            android:fontFamily="@font/roboto"
-            android:text="@string/device_ip_label"
-            android:textAlignment="viewStart"
-            android:textColor="@color/colorAccent"
-            android:textSize="18sp" />
-
-        <EditText
-            android:id="@+id/ip_wizardEditText"
-            android:layout_width="wrap_content"
-            android:layout_height="40dp"
-            android:layout_below="@+id/ip_wizardText"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginEnd="20dp"
-            android:background="@drawable/rounded_input"
-            android:ems="10"
-            android:hint="@string/device_ip_placeholder"
-            android:inputType="textPersonName"
-            android:paddingStart="20dp"
-            android:paddingEnd="20dp"
-            android:textColor="@color/colorTextInput"
-            android:textColorHint="@color/colorHint" />
-    </RelativeLayout>
-
-    <Button
-        android:id="@+id/continueButton"
-        style="?attr/selectableItemBackground"
-        android:layout_width="wrap_content"
-        android:layout_height="45dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginBottom="50dp"
-        android:background="@drawable/button_rounded_accent"
-        android:fontFamily="@font/roboto"
-        android:text="@string/button_continue"
-        android:textColor="#FFF"
-        android:textSize="18sp" />
-
-</RelativeLayout>
+</ScrollView><!--</RelativeLayout>-->

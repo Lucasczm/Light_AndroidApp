@@ -9,8 +9,14 @@
     <string name="device_ip_placeholder">IP do dispositivo</string>
     <string name="button_start">começar</string>
     <string name="button_continue">CONTINUAR</string>
+    <string name="finish">FINALIZAR</string>
+    <string name="confirm">CONFIRMAR</string>
     <string name="update">atualizar</string>
     <string name="save">salvar</string>
     <string name="back">voltar</string>
     <string name="settings">Configurações</string>
+    <string name="finished">Concluido!</string>
+    <string name="device_finished">Seu dispositivo está pronto para ser usado!</string>
+
+
 </resources>
